@@ -55,7 +55,7 @@ bench_risk = bench_ret.std()
 bench_risk*100
 
 if pf_std > bench_risk:
-    st.markdown('<p style="color:red;">Portfolio is risky! Consider adding more assets.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="color:red;">Portfolio is riskier than the S&P 500! Consider adding more assets.</p>', unsafe_allow_html=True)
 else:
     st.markdown('<p style="color:green;">Portfolio risk is reduced!</p>', unsafe_allow_html=True)
 
