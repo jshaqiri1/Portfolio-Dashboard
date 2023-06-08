@@ -9,7 +9,7 @@ st.title('Investment Portfolio Dashboard')
 
 #Provide defult assets and start time
 
-assets = st.text_input("Provide your assets (comma-separated)","AAPL,MSFT,GOOGL")
+assets = st.text_input("Provide at least two assets (comma-separated)","AAPL,MSFT,GOOGL")
 default_date = datetime.now() - timedelta(days=365)
 start = st.date_input("Pick a starting date for your analysis", value=pd.to_datetime(default_date))
 
