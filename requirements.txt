@@ -1,6 +1,6 @@
 pandas
 yfinance
-matplotlib.pyplot
+matplotlib
 numpy
 streamlit
 datetime
