@@ -40,7 +40,7 @@ pf_std = (W.dot(ret_df.cov()).dot(W) **(1/2))
 
 
 #next: Plotting part
-st.subheader('Portfolio vs. Index (1Y % return)')
+st.subheader('Portfolio vs. Index (% return)')
 
 tog = pd.concat([bench_dev*100, pf_cumul_ret*100],axis=1)
 tog.columns = ['S&P500 Performance', 'Portfolio Performance']
