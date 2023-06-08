@@ -40,7 +40,7 @@ pf_std = (W.dot(ret_df.cov()).dot(W) **(1/2))
 
 
 #next: Plotting part
-st.subheader('Portfolio vs. Index (% return)')
+st.subheader('Portfolio vs. Index (1Y % return)')
 
 tog = pd.concat([bench_dev*100, pf_cumul_ret*100],axis=1)
 tog.columns = ['S&P500 Performance', 'Portfolio Performance']
@@ -60,7 +60,7 @@ else:
     st.markdown('<p style="color:green;">Portfolio risk is reduced!</p>', unsafe_allow_html=True)
 
 
-st.subheader('Portfolio composittion:')
+st.subheader('Portfolio composition:')
 
 fig, ax = plt.subplots(figsize=(6, 6), facecolor='white')
 ax.pie(W, labels=data.columns, autopct='%.1f%%', textprops={'color': 'black'})
